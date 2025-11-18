@@ -57,14 +57,15 @@ kubectl get pvc
 
 **✔ Pods**
 
-Simple pods, Nginx pods, resource limits, multi-container pods.
+  Simple pods, Nginx pods, resource limits, multi-container pods.
 
 **✔ Deployments**
 
-Rolling updates, replica sets, label selectors.
+   Rolling updates, replica sets, label selectors.
 
 **✔ Namespaces**
-Isolated environments for resource separation.
+
+   Isolated environments for resource separation.
 
 **✔ Services**
 - ClusterIP
@@ -73,7 +74,7 @@ Isolated environments for resource separation.
 
 - LoadBalancer
 
-Connecting internal and external traffic.
+   Connecting internal and external traffic.
 
 **✔ Volumes**
 - emptyDir
@@ -91,11 +92,11 @@ Connecting internal and external traffic.
 
 **✔ Secrets and ConfigMaps**
 
-Environment variables, volumes, sensitive data handling.
+   Environment variables, volumes, sensitive data handling.
 
 **✔ Network Policies**
 
-Allow/deny traffic between pods.
+   Allow/deny traffic between pods.
 
 ---
 
