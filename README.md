@@ -53,18 +53,20 @@ kubectl get pvc
 
 ---
 
-##**🧩 Concepts Practiced in This Repository**
+## **🧩 Concepts Practiced in This Repository**
 
-✔ Pods
+**✔ Pods**
+
 Simple pods, Nginx pods, resource limits, multi-container pods.
 
-✔ Deployments
+**✔ Deployments**
+
 Rolling updates, replica sets, label selectors.
 
-✔ Namespaces
+**✔ Namespaces**
 Isolated environments for resource separation.
 
-✔ Services
+**✔ Services**
 - ClusterIP
 
 - NodePort
@@ -73,7 +75,7 @@ Isolated environments for resource separation.
 
 Connecting internal and external traffic.
 
-✔ Volumes
+**✔ Volumes**
 - emptyDir
 
 - Persistent Volumes (PV)
@@ -82,20 +84,22 @@ Connecting internal and external traffic.
 
 - Mounting volumes inside pods
 
-✔ Resource Management
+**✔ Resource Management**
 - CPU & memory requests
 
 - CPU & memory limits
 
-✔ Secrets and ConfigMaps
+**✔ Secrets and ConfigMaps**
+
 Environment variables, volumes, sensitive data handling.
 
-✔ Network Policies
+**✔ Network Policies**
+
 Allow/deny traffic between pods.
 
 ---
 
-##**📚 Purpose of This Repository**
+## **📚 Purpose of This Repository**
 This repo is designed for:
 
 - Practicing Kubernetes YAML files
@@ -110,7 +114,7 @@ This repo is designed for:
 
 ---
 
-##**🧪 Recommended Setup**
+## **🧪 Recommended Setup**
 Use Minikube for testing:
 
 ```bash
@@ -126,8 +130,8 @@ minikube service <service-name>
 
 ---
 
-##**📬 Contact**
-Arpit Yadav
+## **📬 Contact**
+- Arpit Yadav
 - 📱 8307532971
 - ✉️ arpit32971@gmail.com
 - LinkedIn: https://www.linkedin.com/in/arpit-yadav-786b1622b
