@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+spec:
+  containers:
+  - name: demo-container-app
+    image: sonambewafaa/photos-app:v2
+    ports:
+    - containerPort: 8501
+    volumeMounts:
+    - mountPath: /app/photos
+      name: demo-volume
+
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      limits:
+        cpu: "500m"
+        memory: "256Mi"
+
+  volumes:
+  - name: demo-volume
+    persistentVolumeClaim:
+      claimName: demo-pvc

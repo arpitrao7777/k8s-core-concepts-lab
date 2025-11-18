@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: photos-app
+spec:
+  containers:
+  - name: photos-app
+    image: acrdevopsinsiders.azurecr.io/photos-app:v2
+    ports:
+    - containerPort: 8501
+    volumeMounts:
+    - mountPath: /app/photos
+      name: 4gb-pendrive
+
+    resources:
+      requests:
+        cpu: "200m"
+        memory: "256Mi"
+      limits:
+        cpu: "1"
+        memory: "512Mi"
+
+  volumes:
+  - emptyDir:
+      sizeLimit: 4 Gi
+    name: 4gb-pendrive
+  - emptyDir:
+      sizeLimit: 16 Gi
+    name: 16gb-pendrive

@@ -1,0 +1,13 @@
+apiverston: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: demo-pvc
+spec:
+  storageClassName: andy
+  volumeName: demo-pv
+  resources:
+    requests:
+      storage: 1Gi
+  volumeMode: Filesystem
+  accessModes: 
+  - ReadWriteMany
