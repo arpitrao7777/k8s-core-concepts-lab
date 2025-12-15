@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ui-ingress-rule
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: ui.jhandu.shop
+    http:
+      paths:
+      - pathType: Exact
+        backend:
+          service:
+            name: todo-ui
+            port:
+              number: 80
